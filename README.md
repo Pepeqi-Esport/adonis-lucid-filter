@@ -226,4 +226,4 @@ Documentation by [Query Scopes](https://lucid.adonisjs.com/docs/model-query-scop
 
 ## License
 
-This project is [MIT](https://github.com/codenameryuu/adonis-lucid-filter/blob/master/LICENSE.md) licensed.
+This package is open-sourced software licensed under the [MIT license](LICENSE.md).
