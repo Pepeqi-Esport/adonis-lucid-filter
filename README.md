@@ -4,24 +4,24 @@ This addon adds the functionality to filter Lucid Models Adonis JS 7. Inspired b
 
 ## Requirement
 
-* Adonis Js 7
-* Lucid 22 or higher
+- Adonis Js 7
+- Lucid 22 or higher
 
 ## Installation
 
-* Install the package
+- Install the package
 
 ```bash
 yarn add @codenameryuu/adonis-lucid-filter
 ```
 
-* Configure the package
+- Configure the package
 
 ```bash
 node ace configure @codenameryuu/adonis-lucid-filter
 ```
 
-* Make sure to register the provider inside `adonisrc.ts` file.
+- Make sure to register the provider inside `adonisrc.ts` file.
 
 ```typescript
 providers: [
@@ -57,13 +57,13 @@ Where `product` is the Lucid Model you are creating the filter for. This will cr
 
 Define the filter logic based on the camel cased input key passed to the `filter()` method.
 
-* Empty strings are ignored
-* `setup()` will be called regardless of input
-* `_id` is dropped from the end of the input to define the method so filtering `product_id` would use the `product()` method
-* Input without a corresponding filter method are ignored
-* The value of the key is injected into the method
-* All values are accessible through the `this.$input` a property
-* All QueryBuilder methods are accessible in `this.$query` object in the model filter class.
+- Empty strings are ignored
+- `setup()` will be called regardless of input
+- `_id` is dropped from the end of the input to define the method so filtering `product_id` would use the `product()` method
+- Input without a corresponding filter method are ignored
+- The value of the key is injected into the method
+- All values are accessible through the `this.$input` a property
+- All QueryBuilder methods are accessible in `this.$query` object in the model filter class.
 
 To define methods for the following input:
 
@@ -145,7 +145,7 @@ In order to call this method it would need to be whitelisted dynamically:
 import { compose } from '@adonisjs/core/helpers'
 import { Filterable } from '@codenameryuu/adonis-lucid-filter'
 
-import { ProductSchema } from "#database/schema";
+import { ProductSchema } from '#database/schema'
 
 import ProductFilter from '#filters/product_filter'
 
